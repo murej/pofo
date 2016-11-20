@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import logo from './logo.svg';
 import './App.scss';
 
@@ -18,8 +19,8 @@ class App extends Component {
 
       }
       return (
-        <div className='App-ProjectLink'>
-          <a href='#'></a>
+        <div className='App-ProjectLink' key={project.route}>
+          <Link to={project.route}></Link>
           <h2>{project.title}<span style={style}></span></h2>
           <p>{project.caption}</p>
         </div>
