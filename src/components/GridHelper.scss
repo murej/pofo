@@ -1,0 +1,75 @@
+@import "../defaults";
+
+.GridHelper {
+  @include display(flex);
+  height: 100%;
+  width: 100%;
+  @include align-items(center);
+  // margin: auto;
+  @include gutter();
+
+  .GridHelper-Gutter,
+  .GridHelper-Content {
+    width: 100%;
+    @include gutter();
+  }
+
+  &--flex {
+    .GridHelper-ContentWrapper {
+      .GridHelper-Content {
+        @include display(flex);
+      }
+    }
+  }
+
+  @include mq($until: small) {
+    .GridHelper-Margin {
+      @include flex(0);
+      .GridHelper-Gutter {
+        padding: 0;
+      }
+    }
+    .GridHelper-ContentWrapper {
+      @include flex(12);
+    }
+  }
+
+  @include mq($from: small, $until: large) {
+    max-width: 1024px;
+
+    .GridHelper-Margin {
+      @include flex(1);
+    }
+    .GridHelper-ContentWrapper {
+      @include flex(10);
+    }
+
+    &--wide {
+      .GridHelper-Margin {
+        @include flex(0);
+      }
+      .GridHelper-ContentWrapper {
+        @include flex(12);
+      }
+    }
+  }
+  @include mq($from: large) {
+    max-width: 1280px;
+
+    .GridHelper-Margin {
+      @include flex(1);
+    }
+    .GridHelper-ContentWrapper {
+      @include flex(10);
+    }
+
+    &--wide {
+      .GridHelper-Margin {
+        @include flex(0);
+      }
+      .GridHelper-ContentWrapper {
+        @include flex(12);
+      }
+    }
+  }
+}

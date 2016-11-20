@@ -3,15 +3,13 @@
 
 html {
   box-sizing: border-box;
-  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  height: inherit;
-
+  color: $color-black;
   line-height: $line-height;
   @extend %font-primary-regular;
 
