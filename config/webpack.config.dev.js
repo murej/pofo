@@ -115,8 +115,8 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.css$/,
-        loader: 'style!css?importLoaders=1!postcss'
+        test: /\.(css|scss)$/,
+        loader: 'style!css!sass?importLoaders=1!postcss'
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
@@ -143,14 +143,7 @@ module.exports = {
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]'
         }
-      },
-      // ADDED AFTER EJECTION:
-      // Sass support
-      {
-        test: /\.scss$/,
-        include: paths.appSrc,
-        loaders: ["style", "css", "sass"]
-      },
+      }
     ]
   },
 
