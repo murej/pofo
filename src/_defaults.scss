@@ -1,0 +1,46 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "~sass-mq/mq";
+
+$color-white: white;
+$color-black: black;
+$color-red: rgba(253,0,0,1);
+$color-redLight: rgba(255,243,243,1);
+$color-yellow: rgba(255,213,139,1);
+$color-green: rgba(0,153,89,1);
+
+$color-greenMid: rgba(204,235,222,1);
+$color-greenLight: rgba($color-green,.10);
+$color-greenDark: rgba(59,128,133,1);
+$color-greyLight: rgba(246,246,246,1);
+$color-greyMid: rgba(238,238,238,1);
+
+$base-font-size-small: 14px;
+$base-font-size: 16px;
+$base-font-size-large: 18px;
+
+$gutter-small: 29px;
+$gutter: 33px;
+$gutter-large: 37px;
+
+// 26px
+$line-height: 19/strip-units($base-font-size);
+// 37px
+
+$modular-scale-ratio: 1.2;
+// $modular-scale-base: 1 35/strip-units($base-font-size);
+
+$em-base: $base-font-size;
+
+$mq-breakpoints: (
+    small:  769px,
+    medium: 1024px,
+    large: 1400px
+);
+
+%font-primary-regular {
+  font-family: "Maison Neue TRIAL", Helvetica, Arial ,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@import "mixins";
