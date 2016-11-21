@@ -1,0 +1,12 @@
+@import "../defaults";
+
+.Header {
+  @include lines("margin-bottom", 3);
+
+  h1, p {
+    margin-right: 2/12*100%;  /* DIRTY */
+  }
+  h1 + p {
+    @include lines("margin-top", 1);
+  }
+}
