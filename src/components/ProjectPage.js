@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import isEmpty from 'lodash/isEmpty';
 import './ProjectPage.scss';
 
 import GridHelper from './GridHelper';
@@ -54,6 +55,9 @@ class ProjectPage extends Component {
   }
   render() {
     const project = this._getProjectData();
+    const hasDetails = !isEmpty(project.details);
+    const hasMedia = !isEmpty(project.media);
+    const hasText = !isEmpty(project.text);
     return (
       <div className='ProjectPage'>
         <Back />
@@ -63,15 +67,19 @@ class ProjectPage extends Component {
             caption={project.caption}
             key={project.route}
           />
-          <div className='ProjectPage-Details'>
-            <div className="ProjectPage-DetailsBox"></div>
-            <div className="ProjectPage-DetailsText">{project.details}</div>
-          </div>
+          {hasDetails &&
+            <div className='ProjectPage-Details'>
+              <div className="ProjectPage-DetailsBox"></div>
+              <div className="ProjectPage-DetailsText" dangerouslySetInnerHTML={{ __html: marked(project.details) }} />
+            </div>
+          }
         </GridHelper>
-        <Media items={project.media} />
-        <GridHelper className='ProjectPage-Text'>
-          <div dangerouslySetInnerHTML={{ __html: marked(project.text) }}></div>
-        </GridHelper>
+        {hasMedia && <Media items={project.media} />}
+        {hasText &&
+          <GridHelper className='ProjectPage-Text'>
+            <div dangerouslySetInnerHTML={{ __html: marked(project.text) }}></div>
+          </GridHelper>
+        }
         <Back />
       </div>
     );
