@@ -10,7 +10,7 @@ class ProjectHeader extends Component {
     const hasLink = !isEmpty(this.props.link);
     const style = {
       top: this._getRandomArbitrary(10, 20)+'%',
-      transform: 'translateX('+this._getRandomArbitrary(-20, 10)+'%) rotate('+this._getRandomArbitrary(-4, 2)+'deg)',
+      transform: 'translateX('+this._getRandomArbitrary(-20, 10)+'%) rotate('+this._getRandomArbitrary(-2.5, 1)+'deg)',
       backgroundSize: this._getRandomArbitrary(100, 120)+'% 70%',
     }
     return (

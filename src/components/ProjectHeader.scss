@@ -30,12 +30,12 @@
       background: linear-gradient(to bottom, transparent 0%, $color-yellow 0%);
       transition: background 0.15s ease-out, transform 0.15s ease-out;
       padding: 2px 0 1px 0;
-      background-position: left bottom;
+      background-position: center center;
       background-repeat: no-repeat;
 
       top: 0;
       transform: translate(0, 0) rotate(0deg);
-      background-size: 50% 100%;
+      background-size: 0% 100%;
     }
 
   }

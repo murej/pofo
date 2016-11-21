@@ -51,7 +51,7 @@
       z-index: -100;
       position: absolute;
       top: 0; left: 0;
-      width: 66%;
+      width: 75%;
       height: 100%;
       background-color: $color-yellow;
     }
@@ -60,10 +60,10 @@
   }
   .ProjectPage-Text {
     @include font-scale(3);
-    @include lines("margin-top", -5.25);
+    @include lines("margin-top", -4.25);
 
     p + p {
-      @include lines("margin-top", 1);
+      @include lines("margin-top", 2);
     }
   }
 }
