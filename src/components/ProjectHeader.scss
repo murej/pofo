@@ -1,0 +1,57 @@
+@import "../defaults";
+
+.ProjectHeader {
+  position: relative;
+
+  a {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  h2, p {
+    margin-right: 1/12*100%;  /* DIRTY */
+  }
+
+  h2 {
+    @include font-scale(3);
+    position: relative;
+    display: inline-block;
+    span {
+      position: absolute;
+      z-index: -100;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      display: block;
+      @include lines("padding-left", 0.5);
+      @include lines("padding-right", 0.5);
+      background: linear-gradient(to bottom, transparent 0%, $color-yellow 0%);
+      transition: background 0.15s ease-out, transform 0.15s ease-out;
+      padding: 2px 0 1px 0;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+
+      top: 0;
+      transform: translate(0, 0) rotate(0deg);
+      background-size: 50% 100%;
+    }
+
+  }
+  &:hover h2 span {
+    // background-size: 100% 70% !important;
+    // transform: translate(-10%, 0) !important;
+  }
+
+  p {
+    @include font-scale(3);
+  }
+  h2 + p {
+    @include lines("margin-top", 1);
+  }
+
+  & + .ProjectHeader {
+    @include lines("margin-top", 3);
+  }
+}

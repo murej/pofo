@@ -2,4 +2,68 @@
 
 .ProjectPage {
 
+  .ProjectPage-Back {
+
+    &:first-child {
+      @include lines("margin-top", 1.5);
+      @include lines("margin-bottom", 3.5);
+    }
+    &:last-child {
+      @include lines("margin-top", 3.5);
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-black;
+    }
+
+    .ProjectPage-BackArrow {
+      @include flex(1);
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .ProjectPage-BackText {
+      @include flex(11);
+    }
+  }
+  .ProjectPage-Media {
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .ProjectPage-Details {
+    z-index: 100;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    @include lines("margin-top", 1.5);
+    @include lines("margin-bottom", -0.5);
+    @include lines("padding-top", 1);
+    @include lines("padding-bottom", 1);
+    @include lines("padding-left", 1.25);
+
+    .ProjectPage-DetailsBox {
+      z-index: -100;
+      position: absolute;
+      top: 0; left: 0;
+      width: 66%;
+      height: 100%;
+      background-color: $color-yellow;
+    }
+    .ProjectPage-DetailsText {
+    }
+  }
+  .ProjectPage-Text {
+    @include font-scale(3);
+    @include lines("margin-top", -5.25);
+
+    p + p {
+      @include lines("margin-top", 1);
+    }
+  }
 }

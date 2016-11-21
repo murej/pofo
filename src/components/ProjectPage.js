@@ -1,12 +1,47 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import './ProjectPage.scss';
 
 import GridHelper from './GridHelper';
+import ProjectHeader from './ProjectHeader';
 
 import projects from '../data/projects';
 
-class ProjectPage extends Component {
+import backArrow from '../assets/back-arrow.svg';
+import marked from 'marked';
+
+class Back extends Component {
   render() {
+    return(
+      <GridHelper className='ProjectPage-Back' size="wide" flex>
+        <div className='ProjectPage-BackArrow'><Link to="/"><img src={backArrow} /></Link></div>
+        <div className='ProjectPage-BackText'><Link to="/">More stuff</Link></div>
+      </GridHelper>
+    );
+  }
+}
+
+class Media extends Component {
+  render() {
+    const items = Array.isArray(this.props.items) ? this.props.items : [this.props.items];
+    const media = items.map((item, i) => {
+      console.log(item);
+      return (
+        <GridHelper size="wide" key={i}>
+          <img src={item} />
+        </GridHelper>
+      );
+    });
+    return(
+      <div className='ProjectPage-Media'>
+        {media}
+      </div>
+    );
+  }
+}
+
+class ProjectPage extends Component {
+  _getProjectData() {
     const projectRoute = this.props.params.project;
     let project;
     projects.forEach((possibleProject) => {
@@ -15,10 +50,29 @@ class ProjectPage extends Component {
         project = possibleProject;
       }
     });
-    console.log(project);
+    return project;
+  }
+  render() {
+    const project = this._getProjectData();
     return (
       <div className='ProjectPage'>
-        {project.title}
+        <Back />
+        <GridHelper>
+          <ProjectHeader
+            title={project.title}
+            caption={project.caption}
+            key={project.route}
+          />
+          <div className='ProjectPage-Details'>
+            <div className="ProjectPage-DetailsBox"></div>
+            <div className="ProjectPage-DetailsText">{project.details}</div>
+          </div>
+        </GridHelper>
+        <Media items={project.media} />
+        <GridHelper className='ProjectPage-Text'>
+          <div dangerouslySetInnerHTML={{ __html: marked(project.text) }}></div>
+        </GridHelper>
+        <Back />
       </div>
     );
   }
