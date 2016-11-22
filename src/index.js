@@ -6,6 +6,7 @@ import App from './App';
 import ProjectIndexPage from './components/ProjectIndexPage';
 import ProjectPage from './components/ProjectPage';
 
+import './assets/fonts/fonts.css';
 import './index.scss';
 
 ReactDOM.render(
