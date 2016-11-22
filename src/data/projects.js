@@ -12,7 +12,7 @@ export default [
   {
     title: "Post–Digital Reader—",
     route: "post-digital-reader",
-    caption: "What is the new role of books in the digital era, beyond form?"
+    caption: "What is the new role of books in the digital era?"
   },
   {
     title: "Alphie—",
@@ -30,8 +30,18 @@ export default [
     caption: "How might we feel the effects of having extreme difficulties with reading?"
   },
   {
-    title: "Innovation Lab—",
-    route: "innovation-lab",
-    caption: "How might we reimagine the future of play by embedding ourselves into an organisation?"
+    title: "Via—",
+    route: "via",
+    caption: "How can we make bike navigation smoother?"
+  },
+  {
+    title: "Toy Innovation Lab—",
+    caption: "How might we reimagine the future of play by embedding ourselves into an organisation?\n\nWe created a maker space with a toy manufacturer and led it with them within our studio space. I was part of the team for a period of time, responsible for integrating human-centred research approaches and creative coding.",
+    confidential: true
+  },
+  {
+    title: "Industrial automation—",
+    caption: "How might we simplify constructing industrial automation systems? We have created a vision for a platform that understands mechanical engineering processes and enables them to make less mistakes in shorter amount of time.",
+    confidential: true
   },
 ]
