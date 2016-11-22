@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, IndexRoute, Route, hashHistory } from 'react-router';
+import { Router, IndexRoute, Route, hashHistory, applyRouterMiddleware } from 'react-router';
+import { useScroll } from 'react-router-scroll';
 import App from './App';
 
 import ProjectIndexPage from './components/ProjectIndexPage';
@@ -10,7 +11,7 @@ import './assets/fonts/fonts.css';
 import './index.scss';
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={hashHistory} render={applyRouterMiddleware(useScroll())}>
     <Route path="/" component={App}>
       <IndexRoute component={ProjectIndexPage} />
       <Route path=":project" component={ProjectPage} />
