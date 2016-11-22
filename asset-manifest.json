@@ -1,9 +1,11 @@
 {
-  "main.css": "static/css/main.51a95ad7.css",
-  "main.css.map": "static/css/main.51a95ad7.css.map",
-  "main.js": "static/js/main.b88f1ead.js",
-  "main.js.map": "static/js/main.b88f1ead.js.map",
+  "main.css": "static/css/main.d0c3d2bf.css",
+  "main.css.map": "static/css/main.d0c3d2bf.css.map",
+  "main.js": "static/js/main.d1481330.js",
+  "main.js.map": "static/js/main.d1481330.js.map",
   "static/media/01.jpg": "static/media/01.b810c7e0.jpg",
+  "static/media/MaisonNeueWEB-Book.woff": "static/media/MaisonNeueWEB-Book.6446d0b9.woff",
+  "static/media/MaisonNeueWEB-Book.woff2": "static/media/MaisonNeueWEB-Book.b1f211ff.woff2",
   "static/media/back-arrow.svg": "static/media/back-arrow.dbd2fcb8.svg",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
 }
