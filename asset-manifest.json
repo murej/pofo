@@ -1,10 +1,10 @@
 {
-  "main.css": "static/css/main.925169a0.css",
-  "main.css.map": "static/css/main.925169a0.css.map",
-  "main.js": "static/js/main.44086aa7.js",
-  "main.js.map": "static/js/main.44086aa7.js.map",
+  "main.css": "static/css/main.1176735e.css",
+  "main.css.map": "static/css/main.1176735e.css.map",
+  "main.js": "static/js/main.2a6d48b6.js",
+  "main.js.map": "static/js/main.2a6d48b6.js.map",
   "static/media/01.gif": "static/media/01.39ddc218.gif",
-  "static/media/01.jpg": "static/media/01.490e6b82.jpg",
+  "static/media/01.jpg": "static/media/01.946dfb7b.jpg",
   "static/media/01.png": "static/media/01.e965fab6.png",
   "static/media/02.jpg": "static/media/02.b6ed9f35.jpg",
   "static/media/02.png": "static/media/02.c0438173.png",
@@ -14,5 +14,6 @@
   "static/media/MaisonNeueWEB-Book.woff": "static/media/MaisonNeueWEB-Book.6446d0b9.woff",
   "static/media/MaisonNeueWEB-Book.woff2": "static/media/MaisonNeueWEB-Book.b1f211ff.woff2",
   "static/media/back-arrow.svg": "static/media/back-arrow.dbd2fcb8.svg",
+  "static/media/icon-play.png": "static/media/icon-play.bb2e28ae.png",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
 }
