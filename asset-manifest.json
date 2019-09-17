@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.25bbeaf9.css",
   "main.css.map": "static/css/main.25bbeaf9.css.map",
-  "main.js": "static/js/main.19fa3911.js",
-  "main.js.map": "static/js/main.19fa3911.js.map",
+  "main.js": "static/js/main.ecfb3515.js",
+  "main.js.map": "static/js/main.ecfb3515.js.map",
   "static/media/01.jpg": "static/media/01.8030e08b.jpg",
   "static/media/02.jpg": "static/media/02.d6abba93.jpg",
   "static/media/02b.mp4": "static/media/02b.76286d65.mp4",
@@ -11,8 +11,16 @@
   "static/media/MaisonNeueWEB-Book.woff": "static/media/MaisonNeueWEB-Book.6446d0b9.woff",
   "static/media/MaisonNeueWEB-Book.woff2": "static/media/MaisonNeueWEB-Book.b1f211ff.woff2",
   "static/media/back-arrow.svg": "static/media/back-arrow.dbd2fcb8.svg",
+  "static/media/belief.jpg": "static/media/belief.b2756096.jpg",
+  "static/media/building.jpg": "static/media/building.2db8558e.jpg",
+  "static/media/building2.jpg": "static/media/building2.f4d6e63b.jpg",
+  "static/media/creativity.jpg": "static/media/creativity.0e60b97b.jpg",
+  "static/media/empathy.jpg": "static/media/empathy.29b88463.jpg",
   "static/media/evolution.png": "static/media/evolution.01561685.png",
+  "static/media/exhibit.jpg": "static/media/exhibit.71d96575.jpg",
+  "static/media/expertise.jpg": "static/media/expertise.a1c8da70.jpg",
   "static/media/fan.jpg": "static/media/fan.946dfb7b.jpg",
+  "static/media/flyers.jpg": "static/media/flyers.cefd1e37.jpg",
   "static/media/gitbook1.png": "static/media/gitbook1.685a503f.png",
   "static/media/gitbook2.png": "static/media/gitbook2.f0a92490.png",
   "static/media/gitbook3.png": "static/media/gitbook3.3fa229d4.png",
@@ -49,5 +57,8 @@
   "static/media/pantheon-suite--pulse.png": "static/media/pantheon-suite--pulse.3fc3b0e8.png",
   "static/media/pantheon-suite--salesplus.png": "static/media/pantheon-suite--salesplus.281940d0.png",
   "static/media/placeholder.png": "static/media/placeholder.71e95500.png",
-  "static/media/suite.png": "static/media/suite.f06dc46b.png"
+  "static/media/purpose.jpg": "static/media/purpose.ce4ac0a8.jpg",
+  "static/media/pyramid.png": "static/media/pyramid.7dc27e3e.png",
+  "static/media/suite.png": "static/media/suite.f06dc46b.png",
+  "static/media/workshops2.jpg": "static/media/workshops2.e9a179a1.jpg"
 }
